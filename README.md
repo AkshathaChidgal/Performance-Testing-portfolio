@@ -64,3 +64,39 @@ performance-testing-restful-booker/
 │   └── environment.json                   # Postman environment config
 ├── CommandsforNon-gui.txt                 # Commands used for testing using non-gui mode
 └── README.md
+---
+-GC Logs, Thread Dumps, Heap Dumps: Not applicable for public APIs, but folder structure is included for reference and real-world enterprise use cases.
+---
+## 📊 Performance Reports
+
+-JMeter HTML Reports: Generated from .csv test results for visual insights.
+-PerfMon Reports: Captured system metrics (CPU, Memory, Disk I/O) on Windows using JMeter’s PerfMon plugin.
+-NMON (Linux only): A monitoring script monitor.sh is included for use on Linux environments.
+
+## 🧾 Database Monitoring (DB2MON & EXPLAIN PLAN)
+🔍 What is DB2MON?
+DB2MON is used in IBM DB2 environments for tracking:
+  -SQL execution statistics
+  -Buffer pool hits/misses
+  -Lock contention
+  -Query durations
+  -It helps identify bottlenecks in database performance.
+
+📌 What is EXPLAIN PLAN?
+  -EXPLAIN PLAN allows analysis of how DB2 will execute a query:
+  -Shows whether it will use indexes or table scans
+  -Helps detect inefficient SQL joins or filters
+  -Crucial for SQL performance tuning
+
+## 📦 Note on Monitoring Scripts
+  -The Restful Booker API is a hosted public API.
+  -Its internal database or backend code is not accessible.
+  -Tools like DB2MON or EXPLAIN PLAN require access to database internals, so they are not applicable here.
+
+## 📌 Summary
+  This project simulates realistic API testing using best practices like:
+  -Parameterization
+  -Correlation
+  -Light load validation
+  -Modular scripting
+  -Multi-layer reporting (JMeter, PerfMon)
