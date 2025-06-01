@@ -64,8 +64,11 @@ performance-testing-restful-booker/
 │   └── environment.json                   # Postman environment config
 ├── CommandsforNon-gui.txt                 # Commands used for testing using non-gui mode
 └── README.md
----
--GC Logs, Thread Dumps, Heap Dumps: Not applicable for public APIs, but folder structure is included for reference and real-world enterprise use cases.
+
+```
+
+
+**GC Logs, Thread Dumps, Heap Dumps: Not applicable for public APIs, but folder structure is included for reference and real-world enterprise use cases.**
 ---
 ## 📊 Performance Reports
 
