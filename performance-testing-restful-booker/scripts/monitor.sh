@@ -1,6 +1,6 @@
 # This script is for Linux systems to monitor server performance
 # Not applicable for public APIs or Windows-only environments
-#Below script id fro refrence purpose only
+# Below script is for refrence purpose only
 
 
 
