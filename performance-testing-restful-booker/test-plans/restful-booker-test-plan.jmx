@@ -25,7 +25,7 @@
         <stringProp name="shareMode">shareMode.all</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="user">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="user" enabled="true">
         <stringProp name="filename">C:/Repository/Performance-Testing-portfolio/performance-testing-restful-booker/data/users.csv</stringProp>
         <stringProp name="fileEncoding"></stringProp>
         <stringProp name="variableNames">username,password</stringProp>
@@ -38,7 +38,7 @@
       </CSVDataSet>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
-        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.num_threads">5</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -48,7 +48,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Token ">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Token " enabled="true">
           <stringProp name="HTTPSampler.domain">${Domain_URL}</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">auth</stringProp>
@@ -309,7 +309,7 @@ f.close();</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get All BookingIds" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get All BookingIds">
           <stringProp name="HTTPSampler.domain">${Domain_URL}</stringProp>
           <stringProp name="HTTPSampler.path">booking</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -389,7 +389,7 @@ f.close();</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Booking id">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Booking id" enabled="true">
           <stringProp name="HTTPSampler.domain">${Domain_URL}</stringProp>
           <stringProp name="HTTPSampler.path">booking/${bookingid}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -437,12 +437,12 @@ f.close();</stringProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer">
+          <stringProp name="ConstantTimer.delay">2000</stringProp>
+          <stringProp name="RandomTimer.range">1000</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
       </hashTree>
-      <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-        <stringProp name="ConstantTimer.delay">0</stringProp>
-        <stringProp name="RandomTimer.range">100.0</stringProp>
-      </UniformRandomTimer>
-      <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
