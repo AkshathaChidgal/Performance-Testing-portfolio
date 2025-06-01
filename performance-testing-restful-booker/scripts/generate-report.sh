@@ -11,4 +11,4 @@ echo "Generating JMeter HTML report from CSV..."
   -g "$CSV_RESULTS" \
   -o "$OUTPUT_DIR"
 
-echo "✅ HTML Report generated at: $OUTPUT_DIR"
+echo "HTML Report generated at: $OUTPUT_DIR"
