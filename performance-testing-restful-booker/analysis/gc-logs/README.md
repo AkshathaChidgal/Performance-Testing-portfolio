@@ -1,3 +1,3 @@
 # GC Logs
 
-Place GC log samples and analysis here. 
+GC logs not applicable for public APIs, sample structure only
