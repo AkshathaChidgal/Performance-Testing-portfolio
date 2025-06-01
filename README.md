@@ -62,4 +62,5 @@ performance-testing-restful-booker/
 ├── postman/
 │   ├── restful-booker-collection.json     # Postman test collection
 │   └── environment.json                   # Postman environment config
+├── CommandsforNon-gui.txt                 # Commands used for testing using non-gui mode
 └── README.md
