@@ -1,6 +1,6 @@
 # JMeter Performance Monitoring Summary
 
-![Performance Graph](./Screenshot 2025-06-01 174539.png)
+[![Performance Graph](./Screenshot 2025-06-01 174539.png)](https://github.com/AkshathaChidgal/Performance-Testing-portfolio/blob/main/performance-testing-restful-booker/reports/perfmon/Screenshot%202025-06-01%20174539.png)
 
 ## 📊 Performance Metrics Summary
 
