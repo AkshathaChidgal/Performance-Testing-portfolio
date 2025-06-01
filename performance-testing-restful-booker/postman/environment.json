@@ -1,0 +1,6 @@
+{
+  "name": "Restful Booker Environment",
+  "values": [
+    { "key": "baseUrl", "value": "https://restful-booker.herokuapp.com", "enabled": true }
+  ]
+} 
