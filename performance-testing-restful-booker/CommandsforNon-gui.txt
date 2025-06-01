@@ -5,6 +5,9 @@ jmeter.bat(Windows)/jmeter.sh(Linux) -n -t test-file [-p property-file] [-l resu
 
 C:\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin>jmeter -n -t C:/Repository/Performance-Testing-portfolio/performance-testing-restful-booker/test-plans/restful-booker-test-plan.jmx -l C:/Repository/Performance-Testing-portfolio/performance-testing-restful-booker/results/CSV-test-results.csv
 
+C:\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin>jmeter -n -t C:/PerfProjectRepo/Performance-Testing-portfolio/performance-testing-restful-booker/test-plans/restful-booker-test-plan.jmx -l C:/PerfProjectRepo/Performance-Testing-portfolio/performance-testing-restful-booker/results/RestfulBooker-test-results2.csv
+
+
 
 2)To run Apache JMeter in NON_GUI mode and generate a report at end :
 Open a command prompt (or Unix shell) and type:
